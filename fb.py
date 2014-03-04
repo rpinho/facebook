@@ -70,7 +70,7 @@ def print_most_common(data, n):
     c = Counter(data)
     print c.most_common(n), sum(c.values())
 
-def get_and_pring_most_common(friends, field, n):
+def get_and_print_most_common(friends, field, n):
     print field
 
     # get data
@@ -140,7 +140,7 @@ def main():
         friends = get_friends(data)
 
     for field, n in zip(fields,N):
-        get_and_pring_most_common(friends, field, n)
+        get_and_print_most_common(friends, field, n)
 
 if __name__ == '__main__':
     main()
